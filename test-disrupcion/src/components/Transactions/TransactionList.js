@@ -7,38 +7,6 @@ import { Container } from "react-bootstrap";
 
 export const TransactionList = () => {
   const { transactions, currentMonth } = useContext(GlobalContext);
-  const daysForMonths = [
-    { dia: 1 },
-    { dia: 2 },
-    { dia: 3 },
-    { dia: 4 },
-    { dia: 5 },
-    { dia: 6 },
-    { dia: 7 },
-    { dia: 8 },
-    { dia: 9 },
-    { dia: 10 },
-    { dia: 11 },
-    { dia: 12 },
-    { dia: 13 },
-    { dia: 14 },
-    { dia: 15 },
-    { dia: 16 },
-    { dia: 17 },
-    { dia: 18 },
-    { dia: 19 },
-    { dia: 20 },
-    { dia: 21 },
-    { dia: 22 },
-    { dia: 23 },
-    { dia: 24 },
-    { dia: 25 },
-    { dia: 26 },
-    { dia: 27 },
-    { dia: 28 },
-    { dia: 29 },
-    { dia: 30 },
-  ];
   let todayTransactions = [];
   let yesterdayTransactions = [];
   let olderTransactions = [];
@@ -56,10 +24,23 @@ export const TransactionList = () => {
       (transaction) => transaction.date < new Date().getDate() - 1
     );
   } else {
-     monthTransactions = transactions[currentMonth].filter(function(e) {
-      return daysForMonths.indexOf(e) > -1;
+    monthTransactions = transactions[currentMonth];
+  }
+  function groupByDay(transactions) {
+    const grouped = {};
+
+    transactions.forEach((transaction) => {
+      const day = transaction.date; // Reemplaza 'date' con el nombre del campo que contiene la fecha
+      if (!grouped[day]) {
+        grouped[day] = {
+          day,
+          transactions: [],
+        };
+      }
+      grouped[day].transactions.push(transaction);
     });
-    console.log(monthTransactions);
+
+    return Object.values(grouped);
   }
   return (
     <Container
@@ -69,9 +50,13 @@ export const TransactionList = () => {
       {monthTransactions.length > 0 ? (
         <>
           <b className="mt-3">Movimientos de {currentMonth}</b>
-
-          {monthTransactions.map((transaction) => (
-            <TransactionCard key={transaction.id} transaction={transaction} />
+          {groupByDay(monthTransactions).map((group) => (
+            <div key={group.day}>
+              <p className="pt-2 h6"><strong>Día {group.day}</strong></p>
+              {group.transactions.map((transaction) => (
+                <TransactionCard key={transaction.id} transaction={transaction} />
+              ))}
+            </div>
           ))}
         </>
       ) : (
@@ -106,8 +91,13 @@ export const TransactionList = () => {
       {olderTransactions.length > 0 ? (
         <>
           <b className="mt-3">Movimientos del mes</b>
-          {olderTransactions.map((transaction) => (
-            <TransactionCard key={transaction.id} transaction={transaction} />
+          {groupByDay(olderTransactions).map((group) => (
+            <div key={group.day}>
+              <p className="pt-2 h6" ><strong>Día {group.day}</strong></p>
+              {group.transactions.map((transaction) => (
+                <TransactionCard key={transaction.id} transaction={transaction} />
+              ))}
+            </div>
           ))}
         </>
       ) : (

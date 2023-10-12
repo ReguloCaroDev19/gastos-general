@@ -31,14 +31,14 @@
 }
 
 .transaction-amount.plus {
-  color: #75d58e;
+  color: #60cb7d;
 }
 
 .transaction-amount.minus {
-  color: #ff898d;
+  color: #da494d;
 }
 
-.icon {
+.icon.plus {
   min-width: 30px;
   min-height: 30px;
   max-width: 30px;
@@ -49,16 +49,24 @@
   justify-content: center;
   font-weight: 700;
   margin-right: 10px;
-}
-
-.icon.plus {
-  background-color: #75d58e;
-  box-shadow: 0px 1px 7px 1px #75d58e;
+  background-color: #60cb7d;
+  box-shadow: 0px 1px 7px 1px #60cb7d;
 }
 
 .icon.minus {
-  background-color: #ff898d;
-  box-shadow: 0px 1px 7px 1px #ff898d;
+  min-width: 30px;
+  min-height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-right: 10px;
+  background-color: #60cb7d;
+  background-color: #f4797d;
+  box-shadow: 0px 1px 7px 1px #f4797d;
 }
 
 .fixed-bottom {

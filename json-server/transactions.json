@@ -1,5 +1,12 @@
 {
-  "Enero": [],
+  "Enero": [
+    {
+      "id": 11682766,
+      "text": "sdfsf",
+      "amount": 2,
+      "date": 5
+    }
+  ],
   "Febrero": [],
   "Marzo": [],
   "Abril": [
@@ -11,36 +18,36 @@
     }
   ],
   "Mayo": [],
-  "Junio": [
-    {
-      "id": 80133748,
-      "text": "iphone",
-      "amount": -13333,
-      "date": 14
-    },
-    {
-      "id": 78893210,
-      "text": "Sueldo",
-      "amount": 20000,
-      "date": 14
-    },
-    {
-      "id": 60115044,
-      "text": "sueldo",
-      "amount": 4444,
-      "date": 14
-    },
-    {
-      "id": 36981293,
-      "text": "nintendo swich",
-      "amount": -4999,
-      "date": 14
-    }
-  ],
+  "Junio": [],
   "Julio": [],
   "Agosto": [],
   "Septiembre": [],
-  "Octubre": [],
+  "Octubre": [
+    {
+      "id": 92082999,
+      "text": "Leche",
+      "amount": -33,
+      "date": 5
+    },
+    {
+      "id": 92082991,
+      "text": "Leche",
+      "amount": -33,
+      "date": 5
+    },
+    {
+      "id": 92082991,
+      "text": "Leche",
+      "amount": -33,
+      "date": 6
+    },
+    {
+      "id": 56431601,
+      "text": "Esta es una cantidad prueba",
+      "amount": 100,
+      "date": 10
+    }
+  ],
   "Noviembre": [],
   "Diciembre": []
 }

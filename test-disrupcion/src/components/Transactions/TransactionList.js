@@ -49,10 +49,10 @@ export const TransactionList = () => {
     >
       {monthTransactions.length > 0 ? (
         <>
-          <b className="mt-3">Movimientos de {currentMonth}</b>
+
           {groupByDay(monthTransactions).map((group) => (
             <div key={group.day}>
-              <p className="pt-2 h6"><strong>Día {group.day}</strong></p>
+              <p className="pt-2 h6"><strong>{currentMonth} - Día {group.day}</strong></p>
               {group.transactions.map((transaction) => (
                 <TransactionCard key={transaction.id} transaction={transaction} />
               ))}
@@ -90,7 +90,6 @@ export const TransactionList = () => {
       )}
       {olderTransactions.length > 0 ? (
         <>
-          <b className="mt-3">Movimientos del mes</b>
           {groupByDay(olderTransactions).map((group) => (
             <div key={group.day}>
               <p className="pt-2 h6" ><strong>Día {group.day}</strong></p>

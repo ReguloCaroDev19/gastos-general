@@ -1,0 +1,40 @@
+.header {
+  background-color: #4a65a3 ;
+  color: white;
+  align-items: center;
+  padding: 15px 0;
+  flex-wrap: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  justify-content: start;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  min-height: 60px;
+}
+
+@media (min-width: 992px) {
+  .header {
+    justify-content: center;
+  }
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+.header > div {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: larger;
+}
+
+.date {
+  font-size: small;
+}

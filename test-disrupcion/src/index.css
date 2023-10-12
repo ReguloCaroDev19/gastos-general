@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+body {
+  margin: 0;
+  background-color: #e4e9ed !important ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+* {
+  font-family: "PT Sans", sans-serif;
+  scrollbar-width: none;
+  transition: all 0.3s ease;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

@@ -73,7 +73,6 @@ export const TransactionCard = ({ transaction }) => {
         )}
       </div>
 
-      {/* Confirmation Modal */}
       <Modal show={showModal} onHide={() => setShowModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>Borrar movimiento</Modal.Title>

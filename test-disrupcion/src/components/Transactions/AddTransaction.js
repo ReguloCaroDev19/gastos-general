@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { GlobalContext } from "../../context/GlobalState";
 import { Button, Modal, Form } from "react-bootstrap";
 
-export const AddTransactionModal = () => {
+export const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
   const [date, setDate] = useState(0);

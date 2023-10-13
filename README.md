@@ -5,7 +5,7 @@
 
 > Copy code
 
-> `git clone https://github.com/ReguloCaroDev19/test-disrupcion.git`
+> `git clone https://github.com/ReguloCaroDev19/prueba-disrupcion.git`
 
 **Open two terminals and Navigate to the project directory:**
 

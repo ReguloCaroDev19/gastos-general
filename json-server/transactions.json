@@ -1,53 +1,14 @@
 {
-  "Enero": [
-    {
-      "id": 11682766,
-      "text": "sdfsf",
-      "amount": 2,
-      "date": 5
-    }
-  ],
+  "Enero": [],
   "Febrero": [],
   "Marzo": [],
-  "Abril": [
-    {
-      "id": 92082999,
-      "text": "Leche",
-      "amount": -33,
-      "date": 12
-    }
-  ],
+  "Abril": [],
   "Mayo": [],
   "Junio": [],
   "Julio": [],
   "Agosto": [],
   "Septiembre": [],
-  "Octubre": [
-    {
-      "id": 92082999,
-      "text": "Leche",
-      "amount": -33,
-      "date": 5
-    },
-    {
-      "id": 92082991,
-      "text": "Leche",
-      "amount": -33,
-      "date": 5
-    },
-    {
-      "id": 92082991,
-      "text": "Leche",
-      "amount": -33,
-      "date": 6
-    },
-    {
-      "id": 56431601,
-      "text": "Esta es una cantidad prueba",
-      "amount": 100,
-      "date": 10
-    }
-  ],
+  "Octubre": [],
   "Noviembre": [],
   "Diciembre": []
 }

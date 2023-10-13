@@ -31,7 +31,7 @@ export const GlobalProvider = ({ children }) => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `${process.env.BACKEND_ENDPOINT}/db`
+        `${process.env.REACT_APP_BACKEND_ENDPOINT}/db`
       );
       const jsonData = response.data;
 
@@ -58,7 +58,7 @@ export const GlobalProvider = ({ children }) => {
   async function addTransaction(transaction, currentMonth) {
     try {
       await axios.post(
-        `${process.env.BACKEND_ENDPOINT}/${currentMonth}`,
+        `${process.env.REACT_APP_BACKEND_ENDPOINT}/${currentMonth}`,
         transaction
       );
 
@@ -72,7 +72,7 @@ export const GlobalProvider = ({ children }) => {
   async function deleteTransaction(id, currentMonth) {
     try {
       await axios.delete(
-        `${process.env.BACKEND_ENDPOINT}/${currentMonth}/${id}`
+        `${process.env.REACT_APP_BACKEND_ENDPOINT}/${currentMonth}/${id}`
       );
       fetchData();
     } catch (error) {

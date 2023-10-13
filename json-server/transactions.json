@@ -8,7 +8,20 @@
   "Julio": [],
   "Agosto": [],
   "Septiembre": [],
-  "Octubre": [],
+  "Octubre": [
+    {
+      "id": 79355187,
+      "text": "Prueba",
+      "amount": 2,
+      "date": 9
+    },
+    {
+      "id": 17054050,
+      "text": "asd",
+      "amount": 10,
+      "date": 10
+    }
+  ],
   "Noviembre": [],
   "Diciembre": []
 }

@@ -5,14 +5,14 @@
 
 > Copy code
 
-> `git clone https://github.com/ReguloCaroDev19/prueba-disrupcion.git`
+> `git clone https://github.com/ReguloCaroDev19/gastos-general.git`
 
 **Open two terminals and Navigate to the project directory:**
 
 
 >Copy code
 
-> `cd test-disrupcion`
+> `cd gastos-general`
 
 > `cd json-server`
 
